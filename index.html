@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus Location</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f2f5;
+            padding-top: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .live-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .live-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Bus Location</h1>
+        <p>Click the button below to view the live location of the bus.</p>
+        <a id="location-link" href="#" class="live-button" target="_blank">
+            View Now
+        </a>
+    </div>
+
+    <script>
+        // Copy-paste the link you received from the driver here
+        const driverLocationLink = "https://maps.app.goo.gl/z68A9vyW1M8Eo6Sr8";
+        
+        // Add the link to the button's href attribute
+        document.getElementById("location-link").href = driverLocationLink;
+    </script>
+</body>
+</html>
